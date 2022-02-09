@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="creac.css">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <title>login</title>
+</head>
+<body id="body">
+    <!--INIZIO NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">M4Rk3T1NG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="elenco.html">Elenco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creacorso.html">Crea il tuo corso</a>
+                    </li>
+                    <li>
+                        <button type="button" id="logout">LOGOUT</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--FINE NAVBAR-->
+
+    <!--INIZIO CORPO-->
+    <div id="crea"></div>
+    <br><br><br>
+
+    <input type="text" id="nomecorso" name="nomecorso" placeholder="nome corso" required>
+    <input type="text" id="duratacorso" name="duratacorso" placeholder="durata corso" required>
+    <select name="selcorso" id="selcorso">
+        <option selected>Seleziona un corso</option>
+        <option value="1">Pizzaiolo</option>
+        <option value="2">Digital Marketing</option>
+        <option value="3">Exchange</option>
+    </select>
+    <button id="btn">Crea corso</button>
+
+    <br><br><br><br>
+
+    <div id="corsocreato"></div>
+
+    <!--FINE CORPO-->
+
+    <br><br><br><br>
+
+    <!--INIZIO FOOTER-->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Antonio</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <!--FINE FOOTER-->
+
+
+    <script src="creacorso.js"></script>
+</body>
+</html>
